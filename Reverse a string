@@ -1,0 +1,16 @@
+# A string is given. We have to print the reversed string.
+# For example, the string is "Hi how are you?"
+# The output should be "?ouy era woh iH"
+# time complexity : O(n), space complexity : O(n)
+
+def reverseStr(str1):
+    reverse_List = []
+    for i in range(len(str1)-1,-1,-1):
+        reverse_List.append(str1[i])
+    
+    return ''.join(reverse_List)
+      
+    
+str1 = "Hi how are you?"
+reversedString = reverseStr(str1)
+print (reversedString)
